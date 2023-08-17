@@ -1,17 +1,10 @@
 #include<stdio.h>
-int main(){
-int n;
-printf("Enter the number of rows: ");
-scanf("%d",&n);
-for(int r=1; r<=n; r++){
-    for(int c=1;c<=n;c++){
-        printf("%d",r);
-    }
-    printf("\n");
+float getArea(float r){
+return 3.1416*r*r;
 }
+int main (){
+    float x;
+scanf("%f",&x);
+printf("%.3f",getArea(x));
 
-
-
-
-return 0;
 }
